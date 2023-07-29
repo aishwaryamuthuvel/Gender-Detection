@@ -15,7 +15,11 @@ The sound that comes out of humans differs with respect to the shape of the voca
 
 ### Classifier Training
 
+For our problem statement, we have considered a neural network with 12 input neurons to take the 12 MFCC coefficients as input. This is passed through a hidden layer to obtain the output that could be thresholded to classify the speech signal as either belonging to a male or a female. Neural networks with a varying number of neurons, from 1 to 10 in the hidden layer were trained and evaluated on the validation data. The figure below shows a plot of the error rate versus the size of the hidden layer. We obtained the minimum error rate when the size of the hidden layer was 8 and so this network was finalized and its performance on the test data is shown in the table. 
 
+<p align="center">
+<img src="https://github.com/aishwaryamuthuvel/Gender-Detection/blob/main/NN_error.png" width=70% height=70% />
+</p>
 
 ## Conclusion
 
